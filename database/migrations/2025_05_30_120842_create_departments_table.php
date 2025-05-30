@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('code')->unique();
             $table->text('description')->nullable();
             $table->text('description_ar')->nullable();
-            $table->foreignId('head_doctor_id')->nullable()->constrained('doctors')->onDelete('set null');
+            $table->unsignedBigInteger('head_doctor_id')->nullable();
             $table->string('location')->nullable();
             $table->string('phone_extension')->nullable();
             $table->string('email')->nullable();

@@ -32,7 +32,7 @@ return new class extends Migration
             $table->enum('blood_type', ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'])->nullable();
             $table->json('chronic_diseases')->nullable();
             $table->json('allergies')->nullable();
-            $table->foreignId('insurance_provider_id')->nullable()->constrained()->onDelete('set null');
+            $table->unsignedBigInteger('insurance_provider_id')->nullable();
             $table->string('insurance_number')->nullable();
             $table->text('notes')->nullable();
             $table->boolean('is_active')->default(true);

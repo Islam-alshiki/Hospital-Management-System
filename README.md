@@ -1,25 +1,72 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏥 LibyaCare Hospital Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A comprehensive hospital management system built with Laravel 11 and FilamentPHP, specifically designed for hospitals in Libya with Arabic language support and local healthcare requirements.
 
-## About Laravel
+## 🚀 Current Status
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**✅ SYSTEM OPERATIONAL** - Admin Panel: http://localhost:8000/admin
+**🔑 Login**: admin@libyacare.ly / password
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 📊 Module Completion Status:
+- ✅ **Patient Management** - Fully functional with comprehensive forms and tables
+- ✅ **Appointment System** - Form and table completed with workflow actions
+- ✅ **Medicine Management** - Complete with stock management and filtering
+- ✅ **User/Staff Management** - Complete with role management and actions
+- ✅ **Department Management** - Complete with staff tracking
+- ✅ **Medical Records** - Complete with comprehensive medical forms and workflow
+- ✅ **Laboratory Management** - Complete with test workflow and result tracking
+- ✅ **Prescription Management** - Complete with medicine dispensing and stock updates
+- ✅ **Billing & Payments** - Complete with payment tracking and invoice management
+- ✅ **Doctor Management** - Complete with specialization and availability tracking
+- ✅ **Insurance Provider Management** - Complete with coverage and policy management
+- ✅ **Ward & Room Management** - Complete with occupancy and maintenance tracking
+- ✅ **Emergency Services** - Complete with triage and emergency workflow
+- ✅ **Reports & Analytics** - Dashboard widget completed
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![LibyaCare Logo](https://via.placeholder.com/800x200/2563eb/ffffff?text=LibyaCare+Hospital+Management+System)
+
+[![Laravel](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
+[![FilamentPHP](https://img.shields.io/badge/FilamentPHP-3.x-orange.svg)](https://filamentphp.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+## ✨ Features
+
+### 🔐 User Management & Authentication
+- **Multi-role system**: Admin, Doctor, Nurse, Pharmacist, Lab Staff, Receptionist, Patient
+- **Staff management** with employee IDs, departments, and shifts
+- **Role-based permissions** using Spatie Laravel Permission
+- **Secure authentication** with Laravel Sanctum for API access
+
+### 👥 Patient Management ✅ **COMPLETED**
+- **Complete patient registration** with National ID validation
+- **Medical history tracking** with chronic diseases and allergies
+- **Emergency contact information**
+- **Insurance integration** with coverage calculation
+- **Advanced search and filtering**
+- **Comprehensive forms and tables**
+
+### 📅 Appointment System 🚧 **IN PROGRESS**
+- **Appointment scheduling** with doctor availability
+- **Multiple appointment types**: Consultation, Follow-up, Emergency, Routine Checkup
+- **Status tracking**: Pending, Confirmed, Completed, Cancelled, No Show
+- **Automated notifications** for upcoming appointments
+- **Conflict detection** and scheduling optimization
+
+### 🩺 Medical Records 🔄 **PENDING**
+- **Comprehensive medical records** with visit details
+- **Vital signs tracking**: Blood pressure, heart rate, temperature, weight, height
+- **Diagnosis and treatment plans**
+- **Medical attachments** support (scans, reports)
+- **Follow-up scheduling**
+
+### 💊 Pharmacy Management 🔄 **PENDING**
+- **Medicine inventory** with stock tracking
+- **Prescription management** with dosage and frequency
+- **Automatic stock alerts** for low inventory
+- **Expiry date tracking**
+- **Barcode support** for medicines
+- **Controlled substance tracking**
 
 ## Learning Laravel
 
