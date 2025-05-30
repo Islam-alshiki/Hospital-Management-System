@@ -206,7 +206,7 @@ class DoctorResource extends Resource
                     ->label('View Schedule')
                     ->icon('heroicon-o-calendar')
                     ->color('info')
-                    ->url(fn ($record) => route('filament.admin.resources.appointments.index', ['doctor' => $record->id])),
+                    ->url(fn ($record) => route('filament.admin.resources.appointments.index') . '?tableFilters[doctor_id][value]=' . $record->id),
 
                 Tables\Actions\Action::make('toggle_availability')
                     ->label(fn ($record) => $record->is_active ? 'Mark Unavailable' : 'Mark Available')

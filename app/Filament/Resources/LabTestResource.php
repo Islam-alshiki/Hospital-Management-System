@@ -36,13 +36,15 @@ class LabTestResource extends Resource
                                     ->getOptionLabelFromRecordUsing(fn ($record) => $record->full_name . ' (' . $record->patient_id . ')')
                                     ->searchable(['first_name', 'last_name', 'patient_id'])
                                     ->required()
-                                    ->preload(),
+                                    ->preload()
+                                    ->default(request()->get('patient_id')),
 
                                 Forms\Components\Select::make('medical_record_id')
                                     ->relationship('medicalRecord', 'id')
                                     ->getOptionLabelFromRecordUsing(fn ($record) => 'Visit: ' . $record->visit_date->format('Y-m-d') . ' - ' . $record->diagnosis)
                                     ->searchable()
-                                    ->preload(),
+                                    ->preload()
+                                    ->default(request()->get('medical_record_id')),
 
                                 Forms\Components\Select::make('doctor_id')
                                     ->relationship('doctor', 'id')

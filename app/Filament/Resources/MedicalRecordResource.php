@@ -359,13 +359,13 @@ class MedicalRecordResource extends Resource
                     ->label('Prescribe')
                     ->icon('heroicon-o-clipboard-document-list')
                     ->color('success')
-                    ->url(fn ($record) => route('filament.admin.resources.prescriptions.create', ['medical_record' => $record->id])),
+                    ->url(fn ($record) => route('filament.admin.resources.prescriptions.create') . '?patient_id=' . $record->patient_id . '&medical_record_id=' . $record->id),
 
                 Tables\Actions\Action::make('order_lab_test')
                     ->label('Order Lab Test')
                     ->icon('heroicon-o-beaker')
                     ->color('info')
-                    ->url(fn ($record) => route('filament.admin.resources.lab-tests.create', ['medical_record' => $record->id])),
+                    ->url(fn ($record) => route('filament.admin.resources.lab-tests.create') . '?patient_id=' . $record->patient_id . '&medical_record_id=' . $record->id),
 
                 Tables\Actions\Action::make('schedule_follow_up')
                     ->label('Schedule Follow-up')

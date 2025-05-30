@@ -228,7 +228,7 @@ class InsuranceProviderResource extends Resource
                     ->label('View Patients')
                     ->icon('heroicon-o-users')
                     ->color('info')
-                    ->url(fn ($record) => route('filament.admin.resources.patients.index', ['insurance_provider' => $record->id])),
+                    ->url(fn ($record) => route('filament.admin.resources.patients.index') . '?tableFilters[insurance_provider_id][value]=' . $record->id),
 
                 Tables\Actions\Action::make('toggle_status')
                     ->label(fn ($record) => $record->is_active ? 'Deactivate' : 'Activate')

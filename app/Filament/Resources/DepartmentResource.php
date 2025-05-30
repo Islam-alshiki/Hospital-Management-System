@@ -146,7 +146,7 @@ class DepartmentResource extends Resource
                     ->label('View Staff')
                     ->icon('heroicon-o-users')
                     ->color('info')
-                    ->url(fn ($record) => route('filament.admin.resources.users.index', ['department' => $record->id])),
+                    ->url(fn ($record) => route('filament.admin.resources.users.index') . '?tableFilters[department_id][value]=' . $record->id),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
